@@ -20,7 +20,8 @@ hands = mpHands.Hands(
     max_num_hands=2)
 
 # Start capturing video from webcam
-cap = cv2.VideoCapture(0)
+video_path = r"C:\project\python\Python sample videos\Side view\VID_20231003_110032.mp4"
+cap = cv2.VideoCapture(video_path)
 
 def generate_frames():
     while True:

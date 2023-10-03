@@ -5,8 +5,8 @@ from flask_socketio import SocketIO
 
 app = Flask(__name__)
 socketio = SocketIO(app)
-
-cap = cv2.VideoCapture(0)
+video_path = r"C:\project\python\Python sample videos\Side view\VID_20231003_110032.mp4"
+cap = cv2.VideoCapture(video_path)
 
 # Pre-trained models and functions for detecting and tracking hands in images and videos.
 mpHands = mp.solutions.hands
